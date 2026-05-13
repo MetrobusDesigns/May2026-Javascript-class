@@ -89,11 +89,35 @@ let myStr = "20";
 // }
 
 
-let str1 = "wow";
-let str2 = "wow";
+// let str1 = "wow";
+// let str2 = "wow";
 
-if(str1.toUpperCase() === str2.toLowerCase()){
-    console.log("Equal!");
-} else {
-    console.log("Not equal.....");
+// if(str1.toUpperCase() === str2.toLowerCase()){
+//     console.log("Equal!");
+// } else {
+//     console.log("Not equal.....");
+// }
+
+
+// let str1 = "wow";
+// let str2 = "wow";
+
+// if(str1.toUpperCase() === str2.toLowerCase()){
+//     console.log("Equal!");
+// } else {
+//     console.log("Not equal.....");
+// }
+
+// boolean - true or false
+
+let isRaining = true;
+
+if(isRaining === true){
+    console.log("It is raining outside");
+} else if(isRaining === false){
+    console.log("It is NOT raining outside");
 }
+
+isRaining = false;
+console.log(isRaining)
+console.log(typeof isRaining)
