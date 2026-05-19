@@ -8,4 +8,4 @@ let player2 = prompt( "> ");
 
 if(player1 === player2) {
     console.log("it's a tie!");
-} else if( player1 === "rock" && player2 !== "paper")
+} else if( player1 === "rock" && player2 !== "paper");
