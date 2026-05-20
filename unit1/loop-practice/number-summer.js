@@ -1,4 +1,4 @@
-"use strict";
+~"use strict";
 const prompt = require("prompt-sync")({ sigint: true });
 
 /* write a program that continually prompts the user for numbers greater than 0 until the user enters a 0 at which point the sum of all the inputted numbers is logged out.
