@@ -13,9 +13,11 @@ Enter some numbers (type 0 when complete):
 Those numbers sum to 33.2
 */
 
-let num = -1; 
-let sum
+let userInput = -1; 
+let sumAdd = 0;
 console.log('Enter some random numbers. When complete, enter 0 to add them')
-while (num !== 0){
-input
-}
+while (userInput != 0){
+userInput= Number(prompt(">: "))
+sumAdd += userInput;
+};
+console.log(`Those numbers add up to ${sumAdd}`);
