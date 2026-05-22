@@ -126,7 +126,10 @@ for (let i = 0; i < students.length; i++) {
   let dinosaurs = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dimetrodon', 'Allosaur', 'Spinosaurus', 'Gigantosaur']
   // Challenge 11 Code
 
-  
+  dinosaurs.splice (4, 7)
+    console.log(dinosaurs);
+
+
   
   
   
