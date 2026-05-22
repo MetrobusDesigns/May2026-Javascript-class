@@ -3,7 +3,11 @@
 // assume the array will have at least 1 item
 
 
-let arr =["Sand" , "Water" , "Beach" , "Umbrella" , "Waves" , "Ice Cream"] // Umbrella
-// let arr2 = 
+//let arr =["Sand" , "Water" , "Beach" , "Umbrella" , "Waves" , "Ice Cream"] // Umbrella
+ let arr = ["chair" , "Remote" , "Desk"] //Desk
 
-// if (arr.length )
+if (arr.length > 3){
+    console.log(arr[3]);
+} else{
+    let lastIndex = arr.length -1;
+    console.log(arr[lastIndex]);}

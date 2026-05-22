@@ -118,3 +118,24 @@ let strArray = ["An", "array", "of", "strings"];
 let joinedString = strArray.join();
 console.log(joinedString)
 console.log(strArray)
+
+//string method
+
+let str = "Thisisastring. This is annother sentence.";
+let split = str.split ("");
+console.log(split);
+
+
+// let strReverse = str.reverse();
+// console.log(strReverse); // This produces an error, doesn't work
+
+
+// let strReverse = split.join("");
+// //console.log (strReverse)
+
+let reverseMe = "Reverse This String";
+//the whole reverse process on 1 line
+let reversedStr2 = reverseMe.split("").reverse().join("");
+
+console.log(reverseMe);
+console.log(reversedString2);
