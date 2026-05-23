@@ -1,10 +1,10 @@
 'use strict'
 
-// const prompt = require('prompt-sync')({sigint: true});
+const prompt = require('prompt-sync')({sigint: true});
 
-// let pinCode = "5678"
-
-// let guess = prompt ("enter your PIN: ");
+let pinCode = "5678"
+let tries = 3
+let guess = prompt ("enter your PIN: ");
 
 // while loop
 // while true, i will do!
@@ -16,10 +16,10 @@
     our code inside the {} will run as normal.  when it makes it to the end, we reevaluate the condition in the while loop
 */
 
-// while (guess !== pinCode){
-//     guess = prompt("Try again: ")
-// } if (guess === pinCode){
-//     console.log("Access granted");}
+while (guess !== pinCode){
+    guess = prompt("Try again: ")
+} if (guess === pinCode){
+    console.log("Access granted");}
 /*
 let ctr =1;
 
