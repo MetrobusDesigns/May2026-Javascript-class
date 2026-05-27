@@ -9,17 +9,17 @@ function truncate(str){
     let newStr = "";
 
     for (let i = 0; i < str.length; i++){
-        if (str[i] <= str [i + 15] ){
-            newStr = newStr + "...";
-        } else {
+        if (i < 15){
             newStr = newStr + str[i];
+        } else {
+            newStr = newStr + "...";
+            break;
         }
     }
     return newStr;
-
 }
 
-console.log("\ntruncate")
+console.log("\ntruncate the string!")
 console.log(truncate("What are you doing? Are you a fool?"));
 console.log(truncate("This is fine."));
 console.log(truncate("Hi. How are you?"));
