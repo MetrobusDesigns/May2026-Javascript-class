@@ -11,4 +11,4 @@ function onlyVowels(str) {
   return result.join('');
 }
 
- console.log(onlyVowels("James"));
+ console.log(onlyVowels("Mesopatamia"));
