@@ -1,0 +1,26 @@
+body {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 12px;
+font-weight: 200;
+align-items: center;
+text-decoration: none;
+align-content: auto;
+};
+
+button {
+    border-radius: 10px;
+}
+
+footer h4 {
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    background-image: url("/todolist/images/volodymyr-hryshchenko-x_OKGbxB3fA-unsplash.jpg");
+    background-position: auto;
+   background-size: contain; 
+   background-repeat: no-repeat;
+   opacity: 
+    /* background-image: linear-gradient(black, white); */
+}

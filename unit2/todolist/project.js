@@ -80,16 +80,30 @@ const prompt = require("prompt-sync")({ sigint: true });
 
 const todoList = [];
 
-let selection = 0;
+// let selection = 0;
 
-while (selection !== 3) {
-  console.log("===========================================");
-  console.log("-Select an action-");
-  console.log("1. Create a to-do item");
-  console.log("2. Complete a to-do item");
-  console.log("3. Exit");
+// while (selection !== 3) {
+//   console.log("===========================================");
+//   console.log("-Select an action-");
+//   console.log("1. Create a to-do item");
+//   console.log("2. Complete a to-do item");
+//   console.log("3. Exit");
 
-  selection = Number(prompt("> "));
+  
+function showmenu(){
+    console.log("~ Select an action ~");
+    console.log("[1] Create a to-do item");
+    console.log("[2] Complete a to-do item");
+    console.log("[3] Exit");
+    selection = Number(prompt("Make a selection> "));
+}
+
+
+
+while (true)
+    showmenu();
+
+const answer = prompt(">") // input from the user
 
   if (selection === 1) {
     // Create todo
@@ -102,4 +116,4 @@ while (selection !== 3) {
   } else {
     console.log("Invalid! Try another selection.");
   }
-}
+
