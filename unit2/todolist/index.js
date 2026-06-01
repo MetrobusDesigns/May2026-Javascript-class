@@ -19,7 +19,9 @@ li.style.opacity = "0.7";
         }
 //COMPLETE BUTTON
         let completeBtn = document.createElement("button");
- completeBtn.textContent = tasks[i].completed ? "Undo" : "Complete";
+ completeBtn.textContent = tasks[i].completed ? "Undo" : 
+//  console.log ()
+ "Complete";
      completeBtn.className = "complete-btn";
      completeBtn.setAttribute("data-index", i);
      completeBtn.onclick = completeTask;
@@ -45,7 +47,7 @@ function addTask() {
     if (text !== "") {
         tasks.push({ text: text, completed: false });
         input.value = "";
-        renderTasks();
+         renderTasks();
     }
 }
 //DELETES TASK FUNCITON
