@@ -78,42 +78,105 @@ You have 2 to-do item(s).
 
 const prompt = require("prompt-sync")({ sigint: true });
 
-const todoList = [];
+const prompt = require('prompt-sync')({ sigint: true })
 
-// let selection = 0;
+const todoList = []
 
-// while (selection !== 3) {
-//   console.log("===========================================");
-//   console.log("-Select an action-");
-//   console.log("1. Create a to-do item");
-//   console.log("2. Complete a to-do item");
-//   console.log("3. Exit");
+let selection = 0
 
-  
-function showmenu(){
-    console.log("~ Select an action ~");
-    console.log("[1] Create a to-do item");
-    console.log("[2] Complete a to-do item");
-    console.log("[3] Exit");
-    selection = Number(prompt("Make a selection> "));
-}
+while (selection !== 3) {
+  displayList()
 
+  console.log('\n===========================================')
+  console.log('\n-Select an action-')
+  console.log('1. Create a to-do item')
+  console.log('2. Complete a to-do item')
+  console.log('3. Exit')
 
-
-while (true)
-    showmenu();
-
-const answer = prompt(">") // input from the user
+  selection = Number(prompt('> '))
 
   if (selection === 1) {
-    // Create todo
-    console.log("Create a todo");
+    createTask()
   } else if (selection === 2) {
-    // Complete todo
-    console.log("Complete todo");
+    completeTask()
   } else if (selection === 3) {
-    console.log("Exit");
+    console.log('Exit')
   } else {
-    console.log("Invalid! Try another selection.");
+    console.log('Invalid! Try another selection.')
+  }
+}
+
+function createTask () {
+  // Create todo
+  console.log('\n- Creating a new todo item -')
+
+  /*
+    todo = {
+        //key: value
+        task: string
+        status: boolean
+    }
+    */
+  // prompt user for the task
+  // .trim() gets rid of leading and trailing whitespace
+  let newTask = prompt('> ').trim();
+
+  // prevent task entered from being blank
+  while(newTask === ""){
+    console.log("\n- Task cannot be blank -");
+    console.log('\n- Creating a new todo item -')
+    newTask = prompt('> ').trim();
   }
 
+  let todo = {
+    task: newTask,
+    status: false
+  }
+
+  todoList.push(todo)
+
+  // console.log(todoList);
+}
+
+function completeTask () {
+  // Complete todo
+  console.log('\n- Complete a todo item -')
+  // false to true
+
+  console.log('Which to-do item would you like to complete?')
+  let itemNumber = Number(prompt('> '))
+
+  // check if itemNumber is in range
+  // keep prompting the user until we get valid input
+  while (isNaN(itemNumber) || itemNumber < 1 || itemNumber > todoList.length) {
+    console.log('Invalid item.')
+
+    console.log('\nWhich to-do item would you like to complete?')
+    itemNumber = Number(prompt('> '))
+    // return;
+  }
+
+  // how do we access the correct todo object?
+  // todoList[itemNumber-1]
+  // how do we change the status from false to true?
+  todoList[itemNumber - 1].status = true
+}
+
+function displayList () {
+  for (let i = 0; i < todoList.length; i++) {
+    // todoList[i] - this is our todo object!
+
+    // complete or incomplete
+    let statusString = ''
+
+    if (todoList[i].status === true) {
+      statusString = 'complete'
+    } else {
+      statusString = 'incomplete'
+    }
+
+    // i + 1 - temporary change.  all we are doing is displaying our i index + 1 more than it currently is for user readibility
+    console.log(`${i + 1} : [${statusString}] ${todoList[i].task}`)
+    // console.log(todoList[i].task);
+  }
+}
