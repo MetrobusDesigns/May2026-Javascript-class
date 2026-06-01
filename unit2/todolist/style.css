@@ -1,18 +1,110 @@
 body {
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 12px;
-font-weight: 200;
-align-items: center;
-text-decoration: none;
-align-content: auto;
-};
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    background-color: #f3ecec;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h3 {
+    text-align: center;
+    color: #666;
+}
+
+
+
+#add-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+#add-btn:hover {
+    background-color: #45a049;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+.container {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#todo-input {
+    width: 75%;
+    height: 40px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+    vertical-align: middle;
+}
+
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    gap: 8px;
+}
+
+.task-item span {
+    flex: 1;
+}
 
 button {
-    border-radius: 10px;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+}
+
+.complete-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.complete-btn:hover {
+    background-color: #1976D2;
+}
+
+.delete-btn {
+    background-color: #e53935;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c62828;
 }
 
 footer h4 {
-    align-items: center;
     text-align: center;
 }
 
@@ -23,4 +115,4 @@ footer h4 {
    background-repeat: no-repeat;
    opacity: 
     /* background-image: linear-gradient(black, white); */
-};
+}
