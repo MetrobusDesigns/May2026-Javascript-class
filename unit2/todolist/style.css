@@ -17,25 +17,7 @@ h3 {
     color: #666;
 }
 
-.container {
-    background-color: #ffffff;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
 
-#todo-input {
-    width: 75%;
-    height: 40px;
-    padding: 8px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    resize: none;
-    vertical-align: middle;
-}
 
 #add-btn {
     padding: 10px 16px;
@@ -58,6 +40,26 @@ h3 {
     padding: 0;
     margin-top: 10px;
 }
+.container {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#todo-input {
+    width: 75%;
+    height: 40px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+    vertical-align: middle;
+}
+
 
 .task-item {
     display: flex;
