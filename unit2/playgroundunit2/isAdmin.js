@@ -1,8 +1,8 @@
-isAdmin{
-    firstName: 'jeff'
-    lastName: 'Bridges'
-    userRole: 'ADMIN'
-}
+// let isAdmin{
+//     firstName: 'jeff',
+//     lastName: 'Bridges',
+//     userRole: 'ADMIN',
+// }
 
 function isAdmin(user) {
     if (userRole == 'ADMIN') {
