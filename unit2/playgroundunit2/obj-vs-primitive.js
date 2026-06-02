@@ -211,7 +211,7 @@ let nums = [12, 14, 24]
 
 pushNewValue(nums, 40);
 
-console.log(nums); // it pushes the value. Arrays are handled the same way as objects 
+console.log(nums); // it pushes the value per the function pushNewValue. Arrays are handled the same way as objects 
 
 /* Main Point: Objects WILL change when you pass them into a function and modify their data. Primitives will NOT change when pass and modify
 them inside a function */
