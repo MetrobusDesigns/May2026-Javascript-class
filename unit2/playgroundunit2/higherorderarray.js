@@ -53,3 +53,15 @@ const ages = [ 22, 25, 1, 6, 89, 45, 34, 8, 17, 20, 22];
 let eightiesCompanies = companies.filter(companies => (companies.start >= 1980 && companies.start < 1990));
 
 console.log(eightiesCompanies);
+let z;
+ages.push(69, 67);
+ages.pop();
+ages.unshift(99);
+// ages.reverse();
+console.log(ages);
+//z = ages.includes(58); // false
+z = ages.indexOf(34); // 7 - will give -1 if not in the array
+
+y = ages.slice (3, 7).reverse().toString(); //Doesn't change the array
+// y = ages.splice (5, 6) WILL change the array
+console.log(z, y);;
