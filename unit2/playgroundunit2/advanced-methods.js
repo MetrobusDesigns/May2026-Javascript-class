@@ -65,3 +65,40 @@ let outputStrArr = strArr.map(function(s) {
 
 console.log("outputStrArr: ");
 console.log(outputStrArr);
+
+let personArray = [
+    { name: "Jane", age: 32 },
+    { name: "Dan", age: 44 },
+    { name: "Joe", age: 37 }
+]
+
+// for map, the parameter inside our callback function represents each element that we are accessing one at a time in our array
+// this is the element that we will apply our operation on
+let personArrayOutput = personArray.map(function (person) {
+   return { name: person.name, age: person.age + 1 };
+});
+
+// function updateAge(person){
+//     return { name: person.name, age: person.age + 1 };
+// }
+
+// you can call functions inside your map callback function!
+// useful if you also need this functionality outside of the map
+// let personArrayOutput = personArray.map(function (person) {
+//    return updateAge(person);
+// });
+
+
+console.log("personOutputArray: ")
+console.log(personArrayOutput)
+
+// // Arrow Functions - ES6
+// function add(a,b) {
+//     return a+b
+// };
+// Alternate syntax  
+// let functionName = (params) => {}
+let add = (a,b) => {
+    return a + b
+}
+console.log(add(2, 5));  //7
