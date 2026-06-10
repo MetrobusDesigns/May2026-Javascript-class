@@ -44,9 +44,9 @@ featheredDino.addEventListener("click", () => {
 let switchBG = document.querySelector("#toggle");
 let row = document.querySelector("#row");
 
-switchBG.addEventListener("click", () => {
-    row.style.background = "black";
-})
+// switchBG.addEventListener("click", () => {
+//     row.style.background = "black";
+// })
 
 
 // Add an event listener to the dinosaur with the id biggify that, when HOVERED, grows the image to 200 pixels wide. Note that this is a different event, and you'll likely need to do some research on what different string you'll need to pass. It's not gonna be click!
@@ -60,4 +60,20 @@ biggifyDino.addEventListener("mouseenter", () => {
 biggifyDino.addEventListener("mouseleave", () => {
     biggifyDino.style.width = "";
 })
+// Make it so that when you click the "Switch Background Color" button, you switch it back and forth from white to whatever color you chose. This doesn't require another event listener, but, rather, a rewrite of the function you made into your event listener. 
 
+switchBG.addEventListener("click", () => {
+//     // row.style.background = "black";
+
+//     // if background color has not been set
+//     if(row.style.backgroundColor === ""){
+//         // set the background color!
+//         row.style.backgroundColor = "lightcoral"
+//     } else {
+//         row.style.backgroundColor = ""; 
+//     }
+// });
+
+row.style.backgroundColor = 
+row.style.backgroundColor === "" ? "lightcoral" : "" });
+console.dir(document.body);
