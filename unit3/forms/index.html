@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Forms!</h1>
+    <form>
+        <div>
+        <label for ="text">Enter your username</label>
+        <input id = "user-input" type="text" placeholder="Enter Username Here" autocomplete="off"/>
+        </div>
+        <button id="submit-button">Submit</button>
+    </form>
+<!-- these are all the form types listed belwo -->
+<form>
+    <input type="radio" />
+    <input type="radio" />
+    <input type="radio" />
+    <input type="number" min="0" max="10"/>
+    <input type="email" />
+    <button type="email">Submit</button>
+    <input type = "password"/>
+    <input type = "date"/>
+    <input type ="time" />
+    <input type = "search" />;
+</form>
+<br>
+
+    <h1>Pizza Delivery Form</h1>
+    <form id="pizza-form">
+      <div>
+        <label>Enter your name for delivery: </label>
+        <input id="delivery-name" placeholder="Your Name" />
+      </div>
+
+      <div id="toppings">
+        <h2>Toppings</h2>
+        <div>
+          <label>Pepperoni: </label>
+          <input id="pepperoni" type="checkbox" />
+        </div>
+
+        <div>
+          <label>Pineapple: </label>
+          <input id="pineapple" type="checkbox" />
+        </div>
+
+        <div>
+          <label>Anchovies: </label>
+          <input id="anchovies" type="checkbox" />
+        </div>
+      </div>
+
+      <div>
+        <h2>Crust</h2>
+
+        <div>
+            <label>Regular: </label>
+            <input id="regular" type="radio" name="crust" checked>
+        </div>
+
+        <div>
+            <label>Thin: </label>
+            <input id="thin" type="radio" name="crust"> 
+        </div>
+
+        <div>
+            <label>Cheesy: </label>
+            <input id="cheesy" type="radio" name="crust">
+        </div>
+
+      </div>
+
+      <button>Submit</button>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
