@@ -28,3 +28,12 @@ match++;}
 
 console.log(stringCompareCounter('nice','nice'));
 
+// as an arrow function
+
+// const stringCompareCounter = (arr1, arr2) => {
+//   let match = 0;
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] === arr2[i]) match++;
+//   }
+//   return match;
+// };
