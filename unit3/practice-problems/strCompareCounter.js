@@ -16,8 +16,15 @@ stringCompareCounter('well','sell') => 3
 
 */
 
-function stringCompareCounter (string , string) {
-
+function stringCompareCounter (arr1 , arr2) {
+    let match=0; // count declared outside of the loop
+ for (let i =0 ; i < arr1.length; i++) {;
+if (arr1[i] === arr2[i]) {
+match++;} 
+    }
+    return match;
 }
 
-stringCompareCounter('cat','cow')
+
+console.log(stringCompareCounter('nice','nice'));
+
