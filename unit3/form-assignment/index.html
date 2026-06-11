@@ -17,6 +17,69 @@
 
     </div>
 </form>
+
+<!-- appointment scheduler for hair -->
+<h2>Appointment Scheduler for Hair</h2>
+  <div class="form-card">
+    <h2>Schedule a haircut</h2>
+
+    <div class="field">
+      <label for="haircut-date">Date</label>
+      <input type="date" id="haircut-date" />
+    </div>
+
+    <div class="field">
+      <label for="haircutter">Preferred haircutter</label>
+      <input type="text" id="haircutter" placeholder="e.g. Alex" />
+    </div>
+
+    <div class="field">
+      <label>Hair length</label>
+      <div class="radio-group">
+        <label class="radio-option">
+          <input type="radio" name="hair-length" value="long" id="long-hair" />
+          Long
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="hair-length" value="short" id="short-hair" />
+          Short
+        </label>
+      </div>
+    </div>
+
+    <button id="submit-btn">Book appointment</button>
+  </div>
+<!-- Account Form Card -->
+ 
+  <div class="form-card">
+    <h2>Create an account</h2>
+
+    <div class="field">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="e.g. cooluser67" />
+    </div>
+
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="e.g. you@email.com" />
+    </div>
+
+    <div class="field">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="At least 4 characters" />
+    </div>
+
+    <div class="field">
+      <label for="confirm-password">Confirm password</label>
+      <input type="password" id="confirm-password" placeholder="Re-enter your password" />
+    </div>
+
+    <button id="submit-btn">Create account</button>
+  </div>
+
+    
+
+
 <script src="script.js"></script>
 </body>
 </html>
