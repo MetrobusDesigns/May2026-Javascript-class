@@ -1,3 +1,86 @@
+
+
 body {
-    background-color: aqua;
-};
+  align-items: center;
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  padding: 1rem;
+}
+
+/* --- The Card --- */
+form {
+display: flex;
+    align-items: center;
+
+  margin-left: auto;
+  margin-right: auto; 
+  background-color: #aaeae8;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* --- Heading --- */
+h1 {
+    display: flex;
+    justify-content: center;
+
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+/* --- Form group wrapper --- */
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* --- Label --- */
+label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #555;
+}
+
+/* --- Text Input --- */
+input[type="text"] {
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #1a1a2e;
+  background-color: #fafafa;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #6366f1;
+  background-color: #fff;
+}
+
+input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+/* --- Submit Button --- */
+button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4f46e5;
+}
